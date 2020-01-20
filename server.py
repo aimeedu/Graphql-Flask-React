@@ -30,19 +30,3 @@ app.add_url_rule(
 #                  view_func=GraphQLView.as_view('graphql', schema=schema, batch=True))
 
 app.run(port=4901)
-
-# query_st = '{ hello }'
-# result = schema.execute(query_st)
-# print(result.data)
-# print(result.data['hello'])
-
-# with_args = '{ hello(name: "Lucy", age: 3)}'
-# result = schema.execute(with_args)
-# print(result.data['hello'])
-
-
-# Schema
-
-# Query fetches data
-# Mutation to changes data and retrieve the changes
-# Subscription to sends changes to clients in real time
